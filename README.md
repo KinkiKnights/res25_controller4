@@ -6,7 +6,7 @@ cd src
 
 リポジトリをPill
 ```bash
-https://github.com/KinkiKnights/res25_controller4.git
+git clone https://github.com/KinkiKnights/res25_controller4.git
 ```
 
 controller.hpp内にプログラムを作成しましょう
