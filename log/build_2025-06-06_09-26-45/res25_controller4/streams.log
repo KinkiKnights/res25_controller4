@@ -1,0 +1,62 @@
+[0.081s] Invoking command in '/home/kk/kk_ws/src/res25_controller4/build/res25_controller4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kk/kk_ws/install/kk_simulator:/home/kk/kk_ws/install/kk_receiver:/home/kk/kk_ws/install/joy_node_web:/opt/ros/humble /usr/bin/cmake /home/kk/kk_ws/src/res25_controller4 -DCMAKE_INSTALL_PREFIX=/home/kk/kk_ws/src/res25_controller4/install/res25_controller4
+[0.821s] -- The C compiler identification is GNU 11.4.0
+[1.413s] -- The CXX compiler identification is GNU 11.4.0
+[1.537s] -- Detecting C compiler ABI info
+[2.143s] -- Detecting C compiler ABI info - done
+[2.292s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.300s] -- Detecting C compile features
+[2.311s] -- Detecting C compile features - done
+[2.361s] -- Detecting CXX compiler ABI info
+[3.126s] -- Detecting CXX compiler ABI info - done
+[3.167s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.176s] -- Detecting CXX compile features
+[3.178s] -- Detecting CXX compile features - done
+[3.221s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.593s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.784s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[6.478s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.545s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.638s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.794s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.983s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.528s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.569s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.438s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.752s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.196s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.328s] -- Looking for pthread.h
+[10.143s] -- Looking for pthread.h - found
+[10.159s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.848s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.867s] -- Found Threads: TRUE  
+[11.938s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[12.271s] -- Found kk_driver_msg: 0.0.1 (/home/kk/kk_ws/install/kk_driver_msg/share/kk_driver_msg/cmake)
+[13.070s] -- Configuring done
+[13.208s] -- Generating done
+[13.293s] -- Build files have been written to: /home/kk/kk_ws/src/res25_controller4/build/res25_controller4
+[13.391s] Invoked command in '/home/kk/kk_ws/src/res25_controller4/build/res25_controller4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kk/kk_ws/install/kk_simulator:/home/kk/kk_ws/install/kk_receiver:/home/kk/kk_ws/install/joy_node_web:/opt/ros/humble /usr/bin/cmake /home/kk/kk_ws/src/res25_controller4 -DCMAKE_INSTALL_PREFIX=/home/kk/kk_ws/src/res25_controller4/install/res25_controller4
+[13.396s] Invoking command in '/home/kk/kk_ws/src/res25_controller4/build/res25_controller4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kk/kk_ws/install/kk_simulator:/home/kk/kk_ws/install/kk_receiver:/home/kk/kk_ws/install/joy_node_web:/opt/ros/humble /usr/bin/cmake --build /home/kk/kk_ws/src/res25_controller4/build/res25_controller4 -- -j4 -l4
+[14.032s] [ 50%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller.cpp.o[0m
+[71.906s] [100%] [32m[1mLinking CXX executable controller_node[0m
+[74.975s] [100%] Built target controller_node
+[75.042s] Invoked command in '/home/kk/kk_ws/src/res25_controller4/build/res25_controller4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kk/kk_ws/install/kk_simulator:/home/kk/kk_ws/install/kk_receiver:/home/kk/kk_ws/install/joy_node_web:/opt/ros/humble /usr/bin/cmake --build /home/kk/kk_ws/src/res25_controller4/build/res25_controller4 -- -j4 -l4
+[75.088s] Invoking command in '/home/kk/kk_ws/src/res25_controller4/build/res25_controller4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kk/kk_ws/install/kk_simulator:/home/kk/kk_ws/install/kk_receiver:/home/kk/kk_ws/install/joy_node_web:/opt/ros/humble /usr/bin/cmake --install /home/kk/kk_ws/src/res25_controller4/build/res25_controller4
+[75.181s] -- Install configuration: ""
+[75.184s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/lib/res25_controller4/controller_node
+[75.244s] -- Set runtime path of "/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/lib/res25_controller4/controller_node" to ""
+[75.246s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/ament_index/resource_index/package_run_dependencies/res25_controller4
+[75.255s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/ament_index/resource_index/parent_prefix_path/res25_controller4
+[75.260s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/environment/ament_prefix_path.sh
+[75.264s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/environment/ament_prefix_path.dsv
+[75.268s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/environment/path.sh
+[75.271s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/environment/path.dsv
+[75.274s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/local_setup.bash
+[75.281s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/local_setup.sh
+[75.284s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/local_setup.zsh
+[75.290s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/local_setup.dsv
+[75.294s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/package.dsv
+[75.298s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/ament_index/resource_index/packages/res25_controller4
+[75.303s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/cmake/res25_controller4Config.cmake
+[75.307s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/cmake/res25_controller4Config-version.cmake
+[75.312s] -- Installing: /home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/package.xml
+[75.326s] Invoked command in '/home/kk/kk_ws/src/res25_controller4/build/res25_controller4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kk/kk_ws/install/kk_simulator:/home/kk/kk_ws/install/kk_receiver:/home/kk/kk_ws/install/joy_node_web:/opt/ros/humble /usr/bin/cmake --install /home/kk/kk_ws/src/res25_controller4/build/res25_controller4

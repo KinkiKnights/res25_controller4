@@ -1,0 +1,16 @@
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/lib/res25_controller4/controller_node
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/ament_index/resource_index/package_run_dependencies/res25_controller4
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/ament_index/resource_index/parent_prefix_path/res25_controller4
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/environment/ament_prefix_path.sh
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/environment/ament_prefix_path.dsv
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/environment/path.sh
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/environment/path.dsv
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/local_setup.bash
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/local_setup.sh
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/local_setup.zsh
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/local_setup.dsv
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/package.dsv
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/ament_index/resource_index/packages/res25_controller4
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/cmake/res25_controller4Config.cmake
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/cmake/res25_controller4Config-version.cmake
+/home/kk/kk_ws/src/res25_controller4/install/res25_controller4/share/res25_controller4/package.xml

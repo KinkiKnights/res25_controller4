@@ -1,0 +1,4 @@
+source;share/res25_controller4/local_setup.bash
+source;share/res25_controller4/local_setup.dsv
+source;share/res25_controller4/local_setup.sh
+source;share/res25_controller4/local_setup.zsh

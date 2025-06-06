@@ -1,0 +1,10 @@
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/uninstall.dir
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/res25_controller4_uninstall.dir
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/controller_node.dir
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/test.dir
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/edit_cache.dir
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/rebuild_cache.dir
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/list_install_components.dir
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/install.dir
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/install/local.dir
+/home/kk/kk_ws/src/res25_controller4/build/res25_controller4/CMakeFiles/install/strip.dir
