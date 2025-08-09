@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>res25_controller4</name>
+  <name>res25_test_controller4</name>
   <version>0.0.1</version>
   <description>RescueRobot2025 Robot Main Control Program</description>
   <maintainer email="kinkiknights@gmail.com">hirai</maintainer>

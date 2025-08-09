@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(res25_controller4)
+project(res25_test_controller4)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -13,10 +13,10 @@ find_package(sensor_msgs REQUIRED)
 find_package(kk_driver_msg REQUIRED)
 
 # 実行ファイルの追加
-add_executable(controller_node src/controller.cpp)
+add_executable(controller src/controller.cpp)
 
 # 実行ファイルに必要な依存ライブラリをリンク
-ament_target_dependencies(controller_node
+ament_target_dependencies(controller
   rclcpp
   std_msgs
   sensor_msgs
@@ -24,7 +24,7 @@ ament_target_dependencies(controller_node
 )
 
 # ビルド成果物のインストール先を指定
-install(TARGETS controller_node
+install(TARGETS controller
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -25,14 +25,11 @@ private:
   void update() {
     if (!latest_joy_) return;
 
-
     // Joyメッセージが未初期化 or サイズ不足ならスキップ
     if (latest_joy_->axes.size() < 2 || latest_joy_->buttons.size() < 8) {
         RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 2000, "Joy message too short");
         return;
     }
-    
-    bool power_flag = latest_joy_->buttons[2]; // 〇
 
     static uint8_t init_counter = 0;
     if (latest_joy_->buttons[12]){
@@ -78,39 +75,20 @@ private:
         // 前輪制御
         auto front_cmd = kk_driver_msg::msg::Gm6020Cmd();
         bool b4 = latest_joy_->buttons[4]; // L_Z
-        float rear_power_p = 0;
-        if( power_flag ){
-            rear_power_p = 0.6;
+        if (is_ex){
+            front_cmd.motor_id = {1, 2, 3, 4, 5, 6};
+            front_cmd.duty = {r_base* power_fix,r_base, l_base * power_fix, l_base , r_base* 0.2, l_base* 0.2};
+            // front_cmd.duty = {r_base* power_fix,r_base, l_base * power_fix, l_base };
+            if(b4){
+                    front_cmd.duty = {r_base,r_base, l_base, l_base };
+            }
+        } else {
+            front_cmd.motor_id = {1, 2, 3, 4, 5, 6};
+            front_cmd.duty = {-r_base,r_base* power_fix, -l_base, l_base * power_fix , r_base* 0.2, l_base* 0.2};
+            if(b4){
+                front_cmd.duty = {-r_base,r_base, -l_base, l_base };
+            }
         }
-        else{
-            rear_power_p = 0.2;
-        }
-        // if (is_ex){
-        front_cmd.motor_id = {1, 2, 3, 4, 5, 6};
-        float power_fix_r1 = 1;
-        float power_fix_r2 = power_fix;
-        float power_fix_l1 = 1;
-        float power_fix_l2 = power_fix;
-        if (r_base > 0){
-            power_fix_r1 = power_fix;
-            power_fix_r2 = 1;
-        }
-        if (l_base > 0){
-            power_fix_l1 = power_fix;
-            power_fix_l2 = 1;
-        }
-        front_cmd.duty = {r_base* power_fix_r1,r_base * power_fix_r2, l_base * power_fix_l1, l_base * power_fix_l2 , r_base* rear_power_p, l_base* rear_power_p};
-        // front_cmd.duty = {r_base* power_fix,r_base, l_base * power_fix, l_base };
-        if(b4){
-                front_cmd.duty = {r_base,r_base, l_base, l_base };
-        }
-        // } else {
-        //     front_cmd.motor_id = {1, 2, 3, 4, 5, 6};
-        //     front_cmd.duty = {-r_base,r_base* power_fix, -l_base, l_base * power_fix , r_base* rear_power_p, l_base* rear_power_p};
-        //     if(b4){
-        //         front_cmd.duty = {-r_base,r_base, -l_base, l_base };
-        //     }
-        // }
         gm_publisher_->publish(front_cmd);
 
         printf("(%d, %d)=>%d\n", gm6020_enc[1] , gm6020_enc[3], gm6020_enc[1] + gm6020_enc[3]);
