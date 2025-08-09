@@ -64,16 +64,20 @@ private:
         if (b10 && !prev_b10) is_ex = !is_ex;
         prev_b10 = b10;
 
-        float lx = latest_joy_->axes[0]*0.3;
+        float lx = latest_joy_->axes[0]*0.3; // 横
         float ly = latest_joy_->axes[1];
+        printf("lx: %f, ly: %f\n", lx, ly);
+
+        float ly = latest_joy_->axes[1]; // 縦 +gaMIGI
+        float lx = latest_joy_->axes[0]; //横
+        float speed_r = ly + lx; // 右
+        float speed_l = ly - lx; // 左 
+
         float power = 0.6;
-        float power_fix = 0.075;
         float pid_p = 0.1;
 
         float r_base = -power * (ly - lx);
         float l_base =  power * (ly + lx);
-        float r_diff = pid_p * (gm6020_enc[0] + gm6020_enc[2]);
-        float l_diff = pid_p * (gm6020_enc[1] + gm6020_enc[3]);  
         
         // 前輪制御
         auto front_cmd = kk_driver_msg::msg::Gm6020Cmd();
@@ -113,7 +117,7 @@ private:
         // }
         gm_publisher_->publish(front_cmd);
 
-        printf("(%d, %d)=>%d\n", gm6020_enc[1] , gm6020_enc[3], gm6020_enc[1] + gm6020_enc[3]);
+        // printf("(%d, %d)=>%d\n", gm6020_enc[1] , gm6020_enc[3], gm6020_enc[1] + gm6020_enc[3]);
 
         // 後輪 PID 制御
         // float ref_right = front_cmd.duty[0];
